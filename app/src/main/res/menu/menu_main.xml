@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.MainActivity">
+    <item
+        android:id="@+id/actio_gps"
+        android:icon="@drawable/btn_gps"
+        android:title="RSS"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_rss"
+        android:icon="@drawable/btn_rss"
+        android:title="RSS"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/rss_gps_location"
+                android:title="현재위치 날씨" />
+            <item
+                android:id="@+id/rss_kma_location"
+                android:title="위치 선택" />
+        </menu>
+    </item>
+
+
+</menu>
